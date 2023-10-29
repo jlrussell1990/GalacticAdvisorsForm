@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+    <h1 id="insurance-assessment">Insurance Assessment</h1>
+    <h1 id="client-name">Client Name</h1>
+
+    <div class="client-info">
+        <div class="input-group">
+            <label for="conducted-date">Conducted on: Date</label>
+            <input type="date" id="conducted-date" name="conducted-date">
+        </div>
+
+        <div class="input-group">
+            <label for="accepted-date">Date Accepted: Date</label>
+            <input type="date" id="accepted-date" name="accepted-date">
+        </div>
+
+        <div class="input-group">
+            <label for="reviewer-name">Reviewer Name:</label>
+            <input type="text" id="reviewer-name" name="reviewer-name">
+        </div>
+    </div>
+
+    <div class="horizontal-line-1"></div>
+
+    <div class="average-score">
+        <div class="percentage">0%</div>
+        <p id="average-score">Overall Cyber Insurability Score</p>
+    </div>
+
+    <div class="horizontal-line-2"></div>
+
+    <h2 id="section-title1">Section Title</h2>
+
+    <div class="questions">
+        <div class="question">
+            <input type="checkbox" id="q1" name="q1" value="yes">
+            <label class="question-label" for="q1">Do you manage privileged accounts using a privileged access management software (PAM)?</label>
+            <input class="comment-box1" type="text" id="comment-q1" name="comment-q1" placeholder="Type your comment here">
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q2" name="q2" value="yes">
+            <label class="question-label" for="q2">If a PAM solution is deployed, is accessible in a 'check-in/out' model?</label>
+            <input class="comment-box2" type="text" id="comment-q2" name="comment-q2" placeholder="Type your comment here">
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q3" name="q3" value="yes">
+            <label class="question-label" for="q3">Do you use MFA to protect all local and remote access to privileged user accounts?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q4" name="q4" value="yes">
+            <label class="question-label" for="q4">Do you manage privileged accounts using a privileged access management software (PAM)?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q5" name="q5" value="yes">
+            <label class="question-label" for="q5">If a PAM solution is deployed, is accessible in a 'check-in/out' model?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q6" name="q6" value="yes">
+            <label class="question-label" for="q6">Do you use MFA to protect all local and remote access to privileged user accounts?</label>
+        </div>
+    </div>
+
+    <h2 id="section-title2">Section Title</h2>
+
+    <div class="questions-container">
+        <div class="question">
+            <input type="checkbox" id="q7" name="q7" value="yes">
+            <label class="question-label" for="q7">Do you manage privileged accounts using a privileged access management software (PAM)?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q8" name="q8" value="yes">
+            <label class="question-label" for="q8">If a PAM solution is deployed, is accessible in a 'check-in/out' model?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q9" name="q9" value="yes">
+            <label class="question-label" for="q9">Do you use MFA to protect all local and remote access to privileged user accounts?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q10" name="q10" value="yes">
+            <label class="question-label" for="q10">Do you manage privileged accounts using a privileged access management software (PAM)?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q11" name="q11" value="yes">
+            <label class="question-label" for="q11">If a PAM solution is deployed, is accessible in a 'check-in/out' model?</label>
+        </div>
+
+        <div class="question">
+            <input type="checkbox" id="q12" name="q12" value="yes">
+            <label class="question-label" for="q12">Do you use MFA to protect all local and remote access to privileged user accounts?</label>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+<!-- Script to calculate and update the average score -->
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const percentage = document.querySelector('.percentage');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updatePercentage);
+        });
+
+        function updatePercentage() {
+            const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            const totalChecked = checkedCheckboxes.length;
+            const totalCheckboxes = checkboxes.length;
+            const score = (totalChecked / totalCheckboxes) * 100;
+            percentage.textContent = score.toFixed(0) + '%'; 
+        }
+    </script>
+</body>
+</html>

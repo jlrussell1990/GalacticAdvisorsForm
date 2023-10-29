@@ -1,0 +1,162 @@
+body {
+    width: 612px;
+    height: 792px;
+    margin: 0 auto; /* Center the page horizontally */
+    background: #FFFFFF;
+    border: 2px solid #000; /* black border to simulate PDF boundaries */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* CSS3 shadow */
+}
+
+.content {
+    width: 100%;
+    padding: 20px; 
+}
+
+h1#insurance-assessment {
+    top: 32px;
+    left: 57px;
+    width: 323px;
+    height: 20px;
+    text-align: left;
+    font: normal normal bold 20px/24px Bebas Neue;
+    letter-spacing: 0px;
+    color: #777777;
+    opacity: 1;
+}
+
+h1#client-name {
+    top: 53px;
+    left: 57px;
+    width: 323px;
+    height: 31px;
+    text-align: left;
+    font: normal normal bold 30px/37px Bebas Neue;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.horizontal-line-1 {
+    top: 154px;
+    left: 58px;
+    width: 498px;
+    height: 0px; 
+    border: 1px solid #DEDEDE;
+    opacity: 1;
+}
+
+
+.average-score {
+    top: 164px;
+    left: 67px;
+    display: flex;
+    align-items: center;
+}
+
+.percentage {
+    width: 48px;
+    height: 20px;
+    background: #EF4265 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 10px/14px Open Sans;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.average-score p {
+    top: 167px;
+    left: 125px;
+    width: 219px;
+    height: 14px;
+    text-align: left;
+    font: normal normal bold 10px/14px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+    margin: 0;
+}
+
+.horizontal-line-2 {
+    top: 234px;
+    left: 58px;
+    width: 498px;
+    height: 0px;
+    border: 1px solid #DEDEDE;
+    opacity: 1;
+}
+
+#section-title1 {
+    top: 211px;
+    left: 57px;
+    width: 498px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 14px/19px Open Sans;
+    letter-spacing: 0.14px;
+    color: #000000;
+    opacity: 1;
+}
+
+#section-title2 {
+    top: 483px;
+    left: 57px;
+    width: 498px;
+    height: 19px;
+    text-align: left;
+    font: normal normal bold 14px/19px Open Sans;
+    letter-spacing: 0.14px;
+    color: #000000;
+    opacity: 1;
+}
+
+.questions {
+    top: 238px;
+    left: 125px;
+    width: 398px;
+    height: 200px;
+    text-align: left;
+    font: normal normal 600 8px/11px Open Sans;
+    letter-spacing: 0.08px;
+    color: #000000;
+    opacity: 1;
+}
+
+.comment-box1 {
+    top: 257px;
+    left: 125px;
+    width: 426px;
+    height: 38px;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    font: normal normal 600 7px/9px Open Sans;
+    letter-spacing: 0.07px;
+    color: #777777;
+}
+
+.comment-box2 {
+    top: 322px;
+    left: 125px;
+    width: 426px;
+    height: 38px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: left;
+    font: normal normal 600 7px/9px Open Sans;
+    letter-spacing: 0.07px;
+    color: #777777;
+}
+
+.questions-container {
+    top: 510px;
+    left: 125px;
+    width: 398px;
+    height: 116px;
+    text-align: left;
+    font: normal normal 600 8px/11px Open Sans;
+    letter-spacing: 0.08px;
+    color: #000000;
+    opacity: 1;
+}
+
